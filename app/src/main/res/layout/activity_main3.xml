@@ -26,31 +26,58 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="260dp"
-        android:layout_height="55dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/user"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:drawableLeft="@drawable/user" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="260dp"
-        android:layout_height="55dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/padlock"
+        android:drawableRight="@drawable/visibility"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        android:drawableLeft="@drawable/padlock"
-        android:drawableRight="@drawable/visibility" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:text="LOGIN"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:backgroundTint="#2E2525"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Forgot your password?"
+        android:textColor="#040404"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
